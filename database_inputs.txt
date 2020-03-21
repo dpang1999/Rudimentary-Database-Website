@@ -1,0 +1,69 @@
+Delete from capacity;
+Delete from vet_visit;
+Delete from transport;
+Delete from donations;
+Delete from driver;
+Delete from employee;
+Delete from animal;
+Delete from adopter;
+Delete from shelter;
+Delete from rescue;
+Delete from branch;
+Delete from organization;
+
+Insert into organization values ('Doggy Days Org', '133 Dominics Road', 'Wawa', 'ON'),
+('CATastrophe World', '541 Bennett Way', 'Etobicoke', 'ON'),
+('Hare-y Situations', '3771 Shray Vale', 'New Westminster', 'BC'),
+('SADimals', '7600 Rithic Ave', 'Calgary', 'AB'),
+('BADimals', '12 Panger Crescent', 'Gander', 'NL'),
+('Hippo Sized Sadness', 'Evelin Street', 'Whitehorse', 'YK'),
+('Rats Nest', 'Wendee Boulevard', 'Luneburg', 'NS');
+
+Insert into branch values ('Doggy Days Org', 6388831329), ('CATastrophe World', 3829351919), ('SADimals', 3917493919);
+
+Insert into shelter values ('Hare-y Situations', '3719993184', 'hare-ysitutations.org'), ('Hippo Sized Sadness', 56478328192, 'hipposizedsadness.gc.ca');
+
+Insert into rescue values ('Rats Nest', 'Houssam'), ('BADimals', 'Robin Dawes'); 
+
+Insert into adopter values ('Anand', '87 Python Alley', 'Miami' , 'MB', 7273819376), ('Montgomery', '23 Powley Road', 'Ottawa', 'ON', 6476390615);
+
+Insert into animal values ('gp56781', 'guinea pig', '2020-02-02', '2020-06-06', null, 'Doggy Days Org', 'Hare-y Situations', 'Anand'), ('r326945', 'rabbit', '2019-02-02', null, null, 'Doggy Days Org', null, null), 
+('d584590', 'dog', '2019-06-05', '2020-03-06', 650.24, 'CATastrophe World', 'Hippo Sized Sadness', 'Montgomery'), 
+('gp13132', 'guinea pig',  '2013-09-12', '2014-12-17', null, 'SADimals', null, null),
+('c454231', 'cat',  '2018-01-01', '2019-05-10', 400.00, 'CATastrophe World', 'Hare-y Situations', 'Anand');
+
+Insert into employee values ('Robin Dawes', '580 Armstrong Rd', 'Gander', 'NL', 6135425517, 1, 'BADimals'), 
+('Alice Santilli', '2393 8th line road', 'Etobicoke', 'ON', 6471345039, 0, 'CATastrophe World'), 
+('Ben Simons', '7 Winterbourne Court', 'Etobicoke', 'ON', 4166397856, 0, 'CATastrophe World'), 
+('Cindy Wu', '17 Tettenhall Road', 'Etobicoke', 'ON', 6473120615, 0, 'CATastrophe World'), 
+('Lauren Yates', '45 Anand Street', 'Whitehorse', 'YK', 3175894056, 0, 'Hippo Sized Sadness'), 
+('Katy Scott', '66 Azeem Road', 'Gander', 'NL', 7099932312, 0, 'BADimals'), 
+('David Skillicorn', '103 Walker Street', 'New Westminster', 'BC', 6043235709, 0, 'Hare-y Situations'), 
+('Amber Simpson', '96 Chippendale Crescent', 'Luneburg', 'NS', 9024358353, 0, 'Rats Nest'), 
+('Farhana Zulkernine', '1603 Newfoundland Road', 'Calgary', 'AB', 4039561234, 0, 'SADimals'), 
+('Kai Salomaa', '23 Jewels Street', 'Wawa', 'ON', 7054320968, 0, 'Doggy Days Org'), 
+('Nick Graham', '53 John Smith Boulevard', 'Wawa', 'ON', 7058675432, 0, 'Doggy Days Org'), 
+('Houssam Hassanein', '391 Database Management Systems Path', 'Dartmouth', 'NS',7827371782, 1, 'Rats Nest'),
+('Selim Akl','48 Namerican Road' ,'Delta' ,'BC', telephone_number, 0, 'Hare-y Situations');
+
+Insert into driver value 
+('BADIMALS', 'S23456789981214', 'Katy Scott', 'BADimals'), 
+('RatsNest', 'S10019384880418', 'Amber Simpson', 'Rats Nest');
+
+Insert into donations values ('2018-03-25', 'Powley', 10000, 'Hippo Sized Sadness'); 
+
+Insert into transport values('CATastrophe World', 'Hare-y Situations', 'c454231', 'Katy Scott', 100);
+
+Insert into vet_visit values ('2019-06-25', 'Jenson King', 'mange', 1200, 'r326945'),
+('2020-01-31', 'Jenson King', 'bad dog', 35000, 'd584590'),
+('2014-12-03', 'Jamie Price', 'cancer', 999, 'gp13132'),
+('2018-03-02', 'Randy Ellis', 'catitis', 4000, 'c454231');
+
+Insert into capacity values('Hare-y Situations', 'cat', 20), 
+('Hare-y Situations', 'dog', 30), 
+('Hare-y Situations', 'rabbit', 20), 
+('Hare-y Situations', 'guinea pig', 20), 
+('Hippo Sized Sadness', 'cat', 40), 
+('Hippo Sized Sadness', 'dog', 50), 
+('Hippo Sized Sadness', 'rabbit', 70), 
+('Hippo Sized Sadness', 'guinea pig', 60);

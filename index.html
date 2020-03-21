@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<!-- display the information about all the animals currently housed in a given SPCA location  -->
+<h2> Animals at a SPCA location </h2>
+<form action="animalsAtSPCA.php" method="post">
+<p> SPCA Location </p>
+<input type="text" name="SPCA">
+<input type="submit">
+</form>
+<br>
+<!-- show the total amount donated for 2018 to a selected organization -->
+<h2> Total amount donated for 2018 to an organization </h2>
+<form action="2018DonationsToOrganization.php" method="post">
+<p> Organization </p>
+<input type="text" name="Organization">
+<input type="submit">
+</form>
+<br>
+<!-- show how many animals were rescued during 2018 (by any rescue organization -->
+<h2> Animals rescued during 2018 by any rescue organization </h2>
+<form action="2018RescuedByRescue.php" method="post">
+<input type="submit">
+</form>
+<br>
+<!-- show all the information for all drivers associated with a particular rescue organization -->
+<h2> Drivers by rescue organization </h2>
+<form action="DriversInRescueOrg.php" method="post">
+<p> Rescue Organization </p>
+<input type="text" name="Rescue">
+<input type="submit">
+</form>
+<br>
+<!-- for a particular donor, show which organizations they donated to and the total amount donated (over their lifetime) -->
+<h2> Donations for a particular donor </h2>
+<form action="DonationsByDonor.php" method="post">
+<p> Donor </p>
+<input type="text" name="Donor">
+<input type="submit">
+</form>
+<br>
+</body>
