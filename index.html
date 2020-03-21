@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <head>
 </head>
 
 <body>
-<!-- display the information about all the animals currently housed in a given SPCA location  -->
-<h2> Animals at a SPCA location </h2>
-<form action="animalsAtSPCA.php" method="post">
-<p> SPCA Location </p>
-<input type="text" name="SPCA">
-<input type="submit">
-</form>
-<br>
-<!-- show the total amount donated for 2018 to a selected organization -->
-<h2> Total amount donated for 2018 to an organization </h2>
-<form action="2018DonationsToOrganization.php" method="post">
-<p> Organization </p>
-<input type="text" name="Organization">
-<input type="submit">
-</form>
-<br>
-<!-- show how many animals were rescued during 2018 (by any rescue organization -->
-<h2> Animals rescued during 2018 by any rescue organization </h2>
-<form action="2018RescuedByRescue.php" method="post">
-<input type="submit">
-</form>
-<br>
-<!-- show all the information for all drivers associated with a particular rescue organization -->
-<h2> Drivers by rescue organization </h2>
-<form action="DriversInRescueOrg.php" method="post">
-<p> Rescue Organization </p>
-<input type="text" name="Rescue">
-<input type="submit">
-</form>
-<br>
-<!-- for a particular donor, show which organizations they donated to and the total amount donated (over their lifetime) -->
-<h2> Donations for a particular donor </h2>
-<form action="DonationsByDonor.php" method="post">
-<p> Donor </p>
-<input type="text" name="Donor">
-<input type="submit">
-</form>
-<br>
+<div class="container">
+    <!-- display the information about all the animals currently housed in a given SPCA location  -->
+    <h2> Animals at a SPCA location </h2>
+    <div class="input-field">
+        <form action="animalsAtSPCA.php" method="post">
+            <input type="text" name="SPCA" id="SPCA" class="validate" placeholder="Enter SPCA Location">
+            <input type="submit" class="waves-effect waves-light btn">
+        </form>
+    </div>
+    <br>
+    <!-- show the total amount donated for 2018 to a selected organization -->
+    <h2> Total amount donated for 2018 to an organization </h2>
+    <form action="2018DonationsToOrganization.php" method="post">
+        <input type="text" name="Organization" placeholder="Enter Organization Name">
+        <input type="submit" class="waves-effect waves-light btn">
+    </form>
+    <br>
+    <!-- show how many animals were rescued during 2018 (by any rescue organization -->
+    <h2> Animals rescued during 2018 by any rescue organization </h2>
+    <form action="2018RescuedByRescue.php" method="post">
+        <input type="submit" class="waves-effect waves-light btn">
+    </form>
+    <br>
+    <!-- show all the information for all drivers associated with a particular rescue organization -->
+    <h2> Drivers by rescue organization </h2>
+    <form action="DriversInRescueOrg.php" method="post">
+        <input type="text" name="Rescue" placeholder="Enter Rescue Organization Name">
+        <input type="submit" class="waves-effect waves-light btn">
+    </form>
+    <br>
+    <!-- for a particular donor, show which organizations they donated to and the total amount donated (over their lifetime) -->
+    <h2> Donations by a particular donor </h2>
+    <form action="DonationsByDonor.php" method="post">
+        <input type="text" name="Donor" placeholder="Enter Donor's Name">
+        <input type="submit" class="waves-effect waves-light btn">
+    </form>
+    <br>
+</div>
 </body>
