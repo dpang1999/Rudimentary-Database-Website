@@ -25,7 +25,7 @@ foreach ($rescues as $row)
 {
     $num=$num+1;
 }
-echo "<p>The number of amimals rescued in 2018: $num </p>";
+echo "<p>The number of animals rescued in 2018: $num </p>";
 
 $dbh = null; 
 

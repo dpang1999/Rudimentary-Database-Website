@@ -24,11 +24,18 @@ $dbh = new PDO('mysql:host=localhost;dbname=cisc_332', "root", "");
 
 $rows = $dbh->query("select ID, species from animal where Branch = \"$organization\"");
 
-foreach($rows as $row) {
-		echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td></tr>";
-    }
-    $dbh = null; 
+if($rows->rowCount() <= 0)
+{
+    echo "<tr><td> None </td><td> None </td></tr>";
+}
+else{
+    foreach($rows as $row) {
+            echo "<tr><td>".$row[0]."</td><td>".$row[1]."</td></tr>";
+        }
+}
+$dbh = null; 
 
+    
 ?>
 
 </table>

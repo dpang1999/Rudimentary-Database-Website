@@ -25,12 +25,17 @@ echo "<table>";
 echo "<tr><th> --License Place-- </th><th> --License Number-- </th><th> --Name-- </th></tr> ";
 
 $drivers = $dbh->query("select * from driver where Organization = \"$rescue\"");
-
-foreach ($drivers as $row)
+if($drivers->rowCount() <= 0)
 {
-    echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
+    echo "<tr><td> None </td><td> None </td><td> None </td></tr>";
 }
-
+else
+{     
+    foreach ($drivers as $row)
+    {
+        echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td></tr>";
+    }
+}
 $dbh = null; 
 
 ?>

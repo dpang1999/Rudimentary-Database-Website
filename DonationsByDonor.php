@@ -26,10 +26,16 @@ $allDonations = $dbh->query("select date,amount,organization from donations wher
 $sum=0;
 echo "<table>";
 echo "<tr><th>--Date--</th><th>--Amount--</th><th>--Organization--</th></tr>";
-foreach($allDonations as $donation) {
-        echo "<tr><td>".$donation[0]."</td><td>$".$donation[1]."</td><td>".$donation[2]."</td></tr>";
-		$sum=$sum+$donation[1];
-    }
+if($allDonations->rowCount() <= 0)
+{
+    echo "<tr><td> None </td><td> None </td><td> None </td></tr>";
+}
+else{
+    foreach($allDonations as $donation) {
+            echo "<tr><td>".$donation[0]."</td><td>$".$donation[1]."</td><td>".$donation[2]."</td></tr>";
+            $sum=$sum+$donation[1];
+        }
+}
 echo "<p>Total Amount: \$$sum.00 </p>";
 
 $dbh = null; 

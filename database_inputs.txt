@@ -46,13 +46,18 @@ Insert into employee values ('Robin Dawes', '580 Armstrong Rd', 'Gander', 'NL', 
 ('Houssam Hassanein', '391 Database Management Systems Path', 'Dartmouth', 'NS',7827371782, 1, 'Rats Nest'),
 ('Selim Akl','48 Namerican Road' ,'Delta' ,'BC', telephone_number, 0, 'Hare-y Situations');
 
-Insert into driver value 
+Insert into driver values 
 ('BADIMALS', 'S23456789981214', 'Katy Scott', 'BADimals'), 
 ('RatsNest', 'S10019384880418', 'Amber Simpson', 'Rats Nest');
 
-Insert into donations values ('2018-03-25', 'Powley', 10000, 'Hippo Sized Sadness'); 
+Insert into donations values ('2018-03-10', 'LiterallyAnyone', '123456.00', 'Hippo Sized Sadness'),
+('2018-03-25', 'Powley', '10000.00', 'Hippo Sized Sadness'),
+('2020-03-10', 'LiterallyAnyone', '6969.00', 'Doggy Days Org'),
+('2020-03-24', 'LiterallyAnyone', '420.00', 'Rats Nest');
 
-Insert into transport values('CATastrophe World', 'Hare-y Situations', 'c454231', 'Katy Scott', 100);
+Insert into transport values ('CATastrophe World', 'Hare-y Situations', 'c454231', 'Katy Scott', '100.00'),
+('CATastrophe World', 'Hippo Sized Sadness', 'd584590', 'Amber Simpson', '42.00'),
+('Doggy Days Org', 'Hare-y Situations', 'gp56781', 'Katy Scott', '22.00');
 
 Insert into vet_visit values ('2019-06-25', 'Jenson King', 'mange', 1200, 'r326945'),
 ('2020-01-31', 'Jenson King', 'bad dog', 35000, 'd584590'),

@@ -55,7 +55,7 @@ Create table animal
 Create table employee
 	(
 	name varchar(20) not null,
-	Street varchar(20),
+	Street varchar(50),
     City varchar(20),
     Province char(2),
     Telephone_number numeric(11),
